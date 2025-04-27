@@ -1,4 +1,54 @@
-.fakeimg {
-    height: 200px;
-    background: #aaa;
+
+  body {
+    background-color: #FFAEC9
+    ;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    width: 65%;
+  }
+
+  .g-clickable {
+    cursor: pointer;
+  
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+  .not-clicked{
+    background-color: white;
+  }
+  
+  .g-clickable:hover {
+    transform: scale(0.95);
+    background-color: #FF9B56;
+  }
+  
+  .g-clickable:active {
+    transform: scale(0.95);
+    background-color: rgb(255, 0, 0);
+  }
+  
+  .g-clickable:focus {
+    transform: scale(0.95);
+    background-color: #FF9B56;
+
+  }
+
+  .centered-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* espace égal entre les éléments */
+    padding: 0 5vw; /* marge latérale égale */
+    box-sizing: border-box;
+  }
+  
+  .side-image {
+    width: 250px; /* ajuste selon tes besoins */
+    height: 250px;
+    object-fit: contain;
   }
