@@ -8,7 +8,10 @@ import { CommonModule } from '@angular/common';
     imports: [CommonModule, ClickableDirective],
     template: `
     <div class="wrppaer">
-        test text clickable by directive
+      <div style="text-align: center;margin: -25px -50px 0;">
+          Passionné d'informatique et toujours entrain d'apprendre de nouvelles choses <br/><br/>
+          Cliquez pour accéder à mon CV
+      </div>    
     </div>
   `,
   hostDirectives: [
